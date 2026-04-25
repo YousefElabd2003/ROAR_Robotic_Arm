@@ -1,0 +1,17 @@
+digraph G {
+"world" -> "ee_ref"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1777057582.377446\nOldest transform: 1777057577.377404\n"];
+"world" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "link_1"[label=" Broadcaster: default_authority\nAverage rate: 20.225\nBuffer length: 4.45\nMost recent transform: 148.88\nOldest transform: 144.43\n"];
+"link_1" -> "link_2"[label=" Broadcaster: default_authority\nAverage rate: 20.225\nBuffer length: 4.45\nMost recent transform: 148.88\nOldest transform: 144.43\n"];
+"link_2" -> "link_3"[label=" Broadcaster: default_authority\nAverage rate: 20.225\nBuffer length: 4.45\nMost recent transform: 148.88\nOldest transform: 144.43\n"];
+"link_3" -> "link_4"[label=" Broadcaster: default_authority\nAverage rate: 20.225\nBuffer length: 4.45\nMost recent transform: 148.88\nOldest transform: 144.43\n"];
+"link_4" -> "link_5"[label=" Broadcaster: default_authority\nAverage rate: 20.225\nBuffer length: 4.45\nMost recent transform: 148.88\nOldest transform: 144.43\n"];
+"link_5" -> "link_6"[label=" Broadcaster: default_authority\nAverage rate: 20.225\nBuffer length: 4.45\nMost recent transform: 148.88\nOldest transform: 144.43\n"];
+"link_6" -> "left_gripper_link"[label=" Broadcaster: default_authority\nAverage rate: 20.225\nBuffer length: 4.45\nMost recent transform: 148.88\nOldest transform: 144.43\n"];
+"link_6" -> "right_gripper_link"[label=" Broadcaster: default_authority\nAverage rate: 20.225\nBuffer length: 4.45\nMost recent transform: 148.88\nOldest transform: 144.43\n"];
+"end_effector_frame" -> "sampling_tip"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1777057582.398871"[ shape=plaintext ] ;
+}->"end_effector_frame";
+}

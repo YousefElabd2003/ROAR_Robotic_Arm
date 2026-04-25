@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: sixdof_pkg
+    relative_path: urdf/roar.urdf
+  srdf:
+    relative_path: config/sixdof_pkg.srdf
+  package_settings:
+    author_name: ahmed
+    author_email: ahmed@todo.todo
+    generated_timestamp: 1776137555
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
